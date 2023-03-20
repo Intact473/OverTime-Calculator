@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(./Bilder/PalmeDesktop.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+  }
+  .layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 130px 130px 130px 130px 1fr;
+    grid-template-rows: 1fr 110px 110px 110px 110px 1fr;
+    border-start-end-radius: 20px;
+    border-color: black;
+  }
+  #boschToHours {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    text-align: center;
+    font-family: serif;
+    font-size: xx-large;
+  }
+  #inputkommen {
+    font-size: large;
+    font-family: serif;
+    height: 35px;
+    width: 95;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    margin-top: 30px;
+    color: #4a73b1;
+    background-color: #6ef7f4;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9);
+    border-radius: 5%;
+    text-align: center;
+
+  }
+  #inputgehen {
+    font-size: large;
+    font-family: serif;
+    height: 35px;
+    width: 95;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-top: 30px;
+    color: #4a73b1;
+    background-color: #6ef7f4;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9);
+    border-radius: 5%;
+    text-align: center;
+  }
+
+
+  #kommen {
+    font-size: larger;
+    font-variant:small-caps;
+    height: 35px;
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    margin-top: 30px;
+    border-radius: 5%;
+    text-align: center;
+    color: #4a73b1;
+    background-color: #6ef7f4;
+    border-color: white;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9)
+  }
+  #gehen {
+    font-size: larger;
+    font-variant:small-caps;
+    font-family: serif;
+    height: 35px;
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    margin-top: 30px;
+    border-radius: 5%;
+    text-align: center;
+    color: #4a73b1;
+    background-color: #6ef7f4;
+    border-color: white;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9)
+  }
+  #umrechnen {
+    font-size:larger;
+    font-variant:small-caps;
+    font-family: serif;
+    height: 35px;
+    width: auto;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    margin-top: 30px;
+    border-radius: 5%;
+    text-align: center;
+    color: #4a73b1;
+    background-color: transparent;
+    border-color: white;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9)
+  }
+  #outputumrechnen {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    height: 35px;
+    width: 95;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    margin-top: 30px;
+    color: #4a73b1;
+    background-color: transparent;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9);
+    text-align: center;
+  }
+
+  #zeit {
+    animation: fortschritt 5s linear;
+  }
+  
+  #schritte {
+    animation: fortschritt 5s steps(30);
+  }
+  #rectangle{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 2;
+    border-radius: 10%;
+    background: rgba(25, 255, 255, 0.4);
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.9);
+}
+  
+  @keyframes fortschritt {
+    from {
+      width: 0%
+    }
+    to {
+      width: 100%
+    }
+  }
+  
+  output {
+    height: 2em;
+    background-image: repeating-linear-gradient(135deg, red, red, rgb(20, 18, 18), rgb(10, 10, 10) 20px);
+    border-radius: 0.5em;
+    display: block;
+  }
+
+  #boschToHours{
+    font-style: italic;
+    margin-top: 10%;
+    color: #fff;
+    font-size: 250%;
+    text-decoration: solid underline #FFD700 4px;
+    z-index: 1;
+  }
+
+  #Sonne {
+    background-color: #ffa500;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-170%, -135%);
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ffa421;
+    box-shadow: 0 0 20px 2px rgba(255, 214,0 , 1.5);
+    text-align: center;
+    border-radius: 100px;
+    z-index: 0;
+  }
